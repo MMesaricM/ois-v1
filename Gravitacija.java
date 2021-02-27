@@ -8,7 +8,8 @@ public class Gravitacija{
 		System.out.println("OIS je zakon!");
 	}
 		
-	private static void izpis(double n) {
-		System.out.printf("%f, %f", n, izracun(n));
+	private static double izracun(double nadmorska) {
+		double a = ((6.674 * Math.pow(10, -11)) * (5.972 * Math.pow(10, 24))) / (Math.pow(((6.371 * Math.pow(10, 5)) + nadmorska), 2));
+		return (a);
 	}
 }
