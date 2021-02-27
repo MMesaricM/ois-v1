@@ -12,4 +12,9 @@ public class Gravitacija{
 		double a = ((6.674 * Math.pow(10, -11)) * (5.972 * Math.pow(10, 24))) / (Math.pow(((6.371 * Math.pow(10, 5)) + nadmorska), 2));
 		return (a);
 	}
+	
+	private static void izpis (double nadmorska){
+		System.out.printf("%f, %f", nadmorska, izracun(nadmorska));
+	}
+		
 }
